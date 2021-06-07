@@ -74,7 +74,9 @@ $faq = [
 
       <!-- logo -->
       <div class="logo">
-        <img src="img/Google-logo.png" alt="">
+        <div class="img_box">
+          <img src="img/Google-logo.png" alt="">
+        </div>
         <a href="">Privacy e termini</a>
       </div>
 
@@ -96,13 +98,13 @@ $faq = [
     
       <h2>
         <?php
-          echo $googleFaq['question']
+          echo nl2br($googleFaq['question']);
         ?>
       </h2>
 
       <p>
         <?php
-          echo $googleFaq['answer']
+          echo nl2br($googleFaq['answer']);
         ?>
       </p>
     
